@@ -1,3 +1,7 @@
+/* 
+    Header.module.css
+*/
+
 .header_wrapper{
     color: var(--light-color);
     padding: 1rem 2rem;
@@ -26,20 +30,25 @@
 .header_search_input_wrapper{
     width: 100%;
 }
-.header_search_input_wrapper input{
-    width: 70%;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5rem 0 0 5rem;
-}
+.header_search_input_wrapper form{
+    display: flex;
+};
+.header_search_input_wrapper form input{
+    /*
+    WRITTEN IN JSX STYLE
+    */
+} 
 .header_search_input_wrapper select{
-    width: 20%;
-    padding: 8px 0px 9px 9px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 0px 9px;
     border: none;
     text-transform: capitalize;
 }
-.header_search_input_wrapper button{
-    width: 10%;
+.header_search_input_wrapper a{
+    width: 100%;
+    height: 100%;
+    display: block;
     padding: 0.5rem 0;
     border-radius: 0 5rem 5rem 0;
     border: none;
@@ -55,7 +64,27 @@
     display: flex;
     justify-content: space-around;
 }
-
+.header_compare,
+.header_cart,
+.header_wishlist,
+.header_user
+{
+    position: relative;
+}
+.header_user_drop_down{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    background-color: var(--light-color);
+    border: 1px solid #ddd;
+    padding: 0.7rem;
+    /* z-index: var(--z-index-100); */
+}
+.header_basket_drop_down{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
 
 /* responsive css starts here */
 

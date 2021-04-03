@@ -1,8 +1,17 @@
 :root {
   --theme-color: #13a7b1;
   --light-color: #fff;
-  --search-btn-color: rgba(0,88,94,100%)
-
+  --search-btn-color: rgba(0,88,94,100%);
+  --z-index-100:100;
+  --z-index-200:200;
+  --z-index-300:300;
+  --z-index-400:400;
+  --z-index-500:500;
+  --z-index-600:600;
+  --z-index-700:700;
+  --z-index-800:800;
+  --z-index-900:900;
+  --z-index-1000:1000;
 }
 /* 
 --product-tittle-color:rgba(97,97,97);
@@ -29,6 +38,7 @@ a {
 
 * {
   box-sizing: border-box;
+  /*position: relative; <-------------------------------------------*/
 }
 
 a,
@@ -151,7 +161,6 @@ img {
 /*--------------------------------------------------------------------
                         Deafult Margin & Padding Starts
 --------------------------------------------------------------------*/
-
 /*-- Margin Top --*/
 .mt-5 {
   margin-top: 5px;
