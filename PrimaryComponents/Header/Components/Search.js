@@ -5,9 +5,14 @@ const Search = () => {
       <div className={Styles.header_search_side_bar}>
         <img src="/assets/svg/icons/menu.svg" alt={'search_side_bar'} />
       </div>
-      <div className={Styles.header_search_input_wrapper}>
+      <div className={`${Styles.header_search_input_wrapper} pl-3 pr-3`}>
         <form>
           <input type="text" name="search" placeholder="Search Here" />
+          <select name="categories" id="">
+            <option value="">all categories</option>
+            <option value="">electronics</option>
+            <option value="">clothings</option>
+          </select>
           <button type="submit">
             <img
               className={Styles.header_search_icon}

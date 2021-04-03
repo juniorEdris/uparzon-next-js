@@ -1,0 +1,8 @@
+@media (min-width:767px) {
+    .header_logo{
+        margin-bottom: 0;
+    }
+    .header_search{
+        margin-bottom: 0;
+    }
+}

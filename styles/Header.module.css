@@ -1,36 +1,78 @@
 .header_wrapper{
     color: var(--light-color);
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     background: var(--theme-color);
     display: flex;
     align-items: center;
 }
-.header_logo{}
+
+/* header logo css starts here */
+.header_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+
+/* header search css starts here */
 .header_search{
     display: flex;
     text-align: center;
+    margin-bottom: 1rem;
+}
+.header_search_side_bar img{
+    height: 100%;
 }
 .header_search_input_wrapper{
     width: 100%;
 }
 .header_search_input_wrapper input{
-    width: 80%;
-    padding: 0.2rem 1rem;
+    width: 70%;
+    padding: 0.5rem 1rem;
     border: none;
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 5rem 0 0 5rem;
+}
+.header_search_input_wrapper select{
+    width: 20%;
+    padding: 8px 0px 9px 9px;
+    border: none;
+    text-transform: capitalize;
 }
 .header_search_input_wrapper button{
     width: 10%;
-    padding: 0.2rem 0;
-    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 0.5rem 0;
+    border-radius: 0 5rem 5rem 0;
     border: none;
     outline: none;
-    background: var(--blue);
+    background: var(--search-btn-color);
 }
 .header_search_icon{
     width: 20px;
 }
+
+/* header buttons css starts here */
 .header_buttons{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+}
+
+
+/* responsive css starts here */
+
+@media (min-width:767px) {
+    /* header logo css starts here */
+    .header_logo{
+        margin-bottom: 0;
+    }
+    /* header search css starts here */
+    .header_search{
+        margin-bottom: 0;
+    }
+    /* header buttons css starts here */
+    .header_buttons{
+        justify-content: center;
+    }
+    .header_buttons div:not(:last-child){
+        margin-right: 2rem;
+    }
 }

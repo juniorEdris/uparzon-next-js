@@ -1,13 +1,24 @@
 :root {
   --theme-color: #13a7b1;
   --light-color: #fff;
+  --search-btn-color: rgba(0,88,94,100%)
+
 }
+/* 
+--product-tittle-color:rgba(97,97,97);
+--product-price-color:rgba(6,6,6);
+--product-border-color:rgba(119,119,119,53%);
+--count-bg-color: rgba(91,91,91,100%)
+search-btn-color: rgba(0,88,94,100%)
+search-select-color: rgba(85,85,85,100%)
+*/
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: "SF UI Display", sans-serif;
   font-size: 16px;
 }
 
