@@ -8,15 +8,15 @@ const Search = () => {
     setSidebar(!sidebar);
   };
   return (
-    <div className={`${Styles.header_search} col-md-7 col-12 `}>
-      <div className={Styles.header_search_side_bar}>
+    <div className={`${Styles.header_search} col-md-7 d-none d-md-block`}>
+      {/* <div className={Styles.header_search_side_bar}>
         <a href={'#'} onClick={search_side_bar}>
           <img src="/assets/svg/icons/menu.svg" alt={'search_side_bar'} />
         </a>
-      </div>
+      </div> */}
       <div className={`${Styles.header_search_input_wrapper} `}>
         <form className="pl-4 pr-3">
-          <div className={` header_search_input col-6 p-0`}>
+          <div className={`  col-7 p-0`}>
             <input
               type="text"
               name="search"
@@ -24,18 +24,18 @@ const Search = () => {
               className="header_search_input"
             />
           </div>
-          <div className="col-3 p-0">
+          <div className="col-4 p-0">
             <select name="categories" id="" className="">
               <option value="">all categories</option>
               <option value="">electronics</option>
               <option value="">clothings</option>
             </select>
           </div>
-          <div className="col-3 p-0">
+          <div className="col-1 p-0">
             <Link href="/search" className="">
-              <a>
+              <a className="flex-hard-center">
                 <img
-                  className={Styles.header_search_icon}
+                  className={`${Styles.header_search_icon} `}
                   src="/assets/svg/icons/search.svg"
                   alt="search button"
                 />
@@ -51,6 +51,8 @@ const Search = () => {
           padding: 0.5rem 1rem;
           border: none;
           border-radius: 5rem 0 0 5rem;
+          height: 40px;
+          max-height: 100%;
         }
         .header_sidebar {
           position: absolute;

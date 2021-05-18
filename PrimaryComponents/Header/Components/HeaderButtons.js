@@ -16,7 +16,7 @@ const HeaderButtons = () => {
     setBasketDropdown(!basketDropdown);
   };
   return (
-    <div className={`${Styles.header_buttons} col-md-3 col-12`}>
+    <div className={`${Styles.header_buttons} col-md-3 col-4`}>
       <div className={`${Styles.header_icon} ${Styles.header_compare}`}>
         <Link href="/compare">
           <a>
@@ -28,12 +28,14 @@ const HeaderButtons = () => {
         <Link href="/whishlist">
           <a>
             <img src="/assets/svg/icons/wishlist.svg" alt="wishlist_icon" />
+            <span className={Styles.count}>{'0'}</span>
           </a>
         </Link>
       </div>
       <div className={`${Styles.header_icon} ${Styles.header_cart}`}>
         <a href={'#'} onClick={basketList}>
           <img src="/assets/svg/icons/shopping-cart.svg" alt="cart_icon" />
+          <span className={Styles.count}>{'0'}</span>
         </a>
         {basketDropdown && <BasketDropdown />}
       </div>

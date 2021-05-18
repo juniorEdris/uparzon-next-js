@@ -3,8 +3,19 @@ import Styles from '../../../../styles/Header.module.css';
 
 const BasketDropdown = () => {
   return (
-    <div className={`${Styles.header_basket_drop_down}}`}>
-      <h1>cart list</h1>
+    <div className={`${Styles.header_basket_drop_down}`}>
+      <ul>
+        <li>
+          <Link href="">
+            <a>register</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="">
+            <a>login</a>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 };

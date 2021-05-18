@@ -8,6 +8,10 @@ const Meta = ({ title, description, keywords }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
+        <link
+          rel="stylesheet"
+          href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+        />
       </Head>
     </>
   );

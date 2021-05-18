@@ -12,6 +12,7 @@
   --z-index-800:800;
   --z-index-900:900;
   --z-index-1000:1000;
+  --dark-color:rgb(91,91,91,100%)
 }
 /* 
 --product-tittle-color:rgba(97,97,97);
@@ -157,6 +158,21 @@ img {
 .section {
   float: left;
   width: 100%;
+}
+.flex-hard-center{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  align-items: center;
+  justify-content: center;
+}
+.link_capitalize{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  /* padding: 0.6rem 0; */
 }
 /*--------------------------------------------------------------------
                         Deafult Margin & Padding Starts
