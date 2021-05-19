@@ -4,12 +4,14 @@ const NavLinks = (props) => {
   return (
     <div className={`${Styles.nav_links_wrapper} col-12`}>
       <div className="row align-items-center">
-        <div className={`${Styles.all_categories} col-6 col-md-4`}>
+        <div
+          className={`${Styles.all_categories} col-4 col-md-2 font-weight-600`}>
           <a href="#" className={`link_capitalize`}>
-            all categories <span className="lnr lnr-menu" />
+            all categories <span className="lnr lnr-menu font-weight-600" />
           </a>
         </div>
-        <div className={`${Styles.middle_links} col-md-4 d-none d-md-block`}>
+        <div
+          className={`${Styles.middle_links} col-md-6 d-none d-md-block font-weight-600`}>
           <ul>
             <li>
               <Link href="">
@@ -23,14 +25,39 @@ const NavLinks = (props) => {
                 <a className={`link_capitalize`}>featured brands</a>
               </Link>
             </li>
+            <li>
+              <Link href="">
+                <a className={`link_capitalize`}>Trending Styles</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="">
+                <a className={`link_capitalize`}>Gift Cards</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="">
+                <a className={`link_capitalize`}>Shop</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="">
+                <a className={`link_capitalize`}>Tech Product</a>
+              </Link>
+            </li>
           </ul>
         </div>
-        <div className={` col-md-4 col-6`}>
-          <div className="row">
+        <div className={` col-md-4 col-8 font-weight-600`}>
+          <div className="row justify-content-end no-gutters">
             <div className={Styles.navlink_right}>
+              <img
+                src="/assets/svg/icons/blender-phone.svg"
+                alt="blender-phone"
+                className={Styles.navlink_icon}
+              />
               <span>Hotline : 1-001-234-5678</span>
             </div>
-            <div className={Styles.navlink_right}>
+            <div className={`${Styles.navlink_right} ml-2`}>
               <span>Free Shipping on Order ৳2000+</span>
             </div>
           </div>
