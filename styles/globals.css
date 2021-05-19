@@ -30,7 +30,7 @@ body {
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-family: "SF UI Display", sans-serif;
   font-size: 16px;
-  overflow: hidden;
+  overflow-xp: hidden;
 }
 
 a {
@@ -174,6 +174,13 @@ img {
   text-transform: capitalize;
   color: var(--dark-color);
   /* padding: 0.6rem 0; */
+}
+/* Owl Carrousel primary css */
+.owl-carousel .owl-dots.disabled {
+  display: block !important;
+  position: absolute;
+    left: 50%;
+    bottom: 5%;
 }
 /*--------------------------------------------------------------------
                         Deafult Margin & Padding Starts
@@ -844,10 +851,19 @@ img {
   opacity: 0.9;
 }
 
-.container-fluid {
-  padding-left: 120px;
-  padding-right: 120px;
+.uparzon-container-fluid {
+  padding: 0 20px;
+  width: 100%;
 }
 /*--------------------------------------------------------------------
                         Deafult Margin & Padding Ends
 --------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+                        Primary Breakpoints
+--------------------------------------------------------------------*/
+@media (min-width:767px) {
+  .uparzon-container-fluid {
+    padding: 0 120px;
+    width: 100%;
+  }
+  }

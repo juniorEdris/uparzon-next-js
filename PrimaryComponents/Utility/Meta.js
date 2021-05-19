@@ -16,11 +16,11 @@ const Meta = ({ title, description, keywords }) => {
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
           integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <script
           src="https://kit.fontawesome.com/e0ab26d7f1.js"
-          crossorigin="anonymous"></script>
+          crossOrigin="anonymous"></script>
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       </Head>
