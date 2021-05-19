@@ -1,12 +1,16 @@
 import Link from 'next/link';
 import Styles from '../../../../styles/Header.module.css';
 const NavLinks = (props) => {
+  const categoriesSidebar = (e) => {
+    e.preventDefault();
+    props.setSidebar(!props.sidebar);
+  };
   return (
     <div className={`${Styles.nav_links_wrapper} col-12`}>
       <div className="row align-items-center">
         <div
           className={`${Styles.all_categories} col-4 col-md-2 font-weight-600`}>
-          <a href="#" className={`link_capitalize`}>
+          <a href="#" className={`link_capitalize`} onClick={categoriesSidebar}>
             all categories <span className="lnr lnr-menu font-weight-600" />
           </a>
         </div>

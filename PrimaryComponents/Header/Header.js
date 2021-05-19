@@ -13,7 +13,7 @@ const Header = (props) => {
         <ResponsiveSearch />
         <HeaderButtons />
       </div>
-      <NavLinks />
+      <NavLinks sidebar={props.sidebar} setSidebar={props.setSidebar} />
     </div>
   );
 };
