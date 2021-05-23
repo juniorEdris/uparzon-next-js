@@ -147,6 +147,11 @@
     margin-right:0.6rem;
 }
 /* responsive css starts here */
+@media (max-width:1200px) {
+    .middle_links ul li a{
+        font-size: 0.7rem;  
+    }
+}
 @media (min-width:767px) {
         /* header logo css starts here */
         .header_logo{

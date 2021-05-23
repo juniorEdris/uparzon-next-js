@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import Features from '../Components/Features/Features';
 import Categories from '../Components/CategorySidebar/Categories';
 import { useEffect, useState } from 'react';
+import { CategoryRow } from '../Components/CategoryRow/CategoryRow';
 
 export default function Home() {
   const [categorySidebar, setCategorySidebar] = useState(false);
@@ -16,28 +17,15 @@ export default function Home() {
     ssr: false,
   });
   return (
-    <div className={Styles.home_wrapper}>
+    <div className={`${Styles.home_wrapper} mb-5`}>
       <Meta />
       <Header sidebar={categorySidebar} setSidebar={setCategorySidebar} />
       <Categories sidebar={categorySidebar} setSidebar={setCategorySidebar} />
       <HomeBanner />
-      <Features />
-      <Features />
-      <Features />
-      <Features />
-      <Features />
-      <Features />
-      <Features />
-      <Features />
-      <Features />
-      <Features />
-      <Features />
-      <Features />
-      <main className={Styles.main}>
-        <h1 className={Styles.title}>
-          Welcome to <a href="https://uparzon.com.bd">Uparzon</a>
-        </h1>
-      </main>
+      <div className="uparzon-container-fluid">
+        <Features />
+        <CategoryRow />
+      </div>
     </div>
   );
 }
