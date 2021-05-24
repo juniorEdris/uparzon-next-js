@@ -25,6 +25,12 @@ export default function Home() {
       <div className="uparzon-container-fluid">
         <Features />
         <CategoryRow />
+        <CategoryRow />
+        <CategoryRow />
+        <CategoryRow />
+        <CategoryRow />
+        <CategoryRow />
+        <CategoryRow />
       </div>
     </div>
   );
