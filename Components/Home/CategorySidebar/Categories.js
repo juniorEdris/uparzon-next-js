@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Styles from '../../styles/Home.module.css';
+import Styles from '../../../styles/Home.module.css';
 const Categories = (props) => {
   return (
     <div className="">

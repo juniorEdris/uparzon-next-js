@@ -874,7 +874,7 @@ img {
 --------------------------------------------------------------------*/
 @media (min-width:767px) {
   .uparzon-container-fluid {
-    padding: 0 120px;
+    padding: 0 50px;
     width: 100%;
   }
   }

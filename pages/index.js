@@ -2,10 +2,10 @@ import Header from '../PrimaryComponents/Header/Header';
 import Meta from '../PrimaryComponents/Utility/Meta';
 import Styles from '../styles/Home.module.css';
 import dynamic from 'next/dynamic';
-import Features from '../Components/Features/Features';
-import Categories from '../Components/CategorySidebar/Categories';
+import Features from '../Components/Home/Features/Features';
+import Categories from '../Components/Home/CategorySidebar/Categories';
 import { useEffect, useState } from 'react';
-import { CategoryRow } from '../Components/CategoryRow/CategoryRow';
+import { CategoryRow } from '../Components/Home/CategoryRow/CategoryRow';
 
 export default function Home() {
   const [categorySidebar, setCategorySidebar] = useState(false);
@@ -13,7 +13,7 @@ export default function Home() {
     document.body.style.overflow = categorySidebar ? 'hidden' : '';
   }, [categorySidebar]);
   // prevent owlCarrousel ServerSide rendering
-  const HomeBanner = dynamic(import('../Components/Banner/HomeBanner'), {
+  const HomeBanner = dynamic(import('../Components/Home/Banner/HomeBanner'), {
     ssr: false,
   });
   return (
@@ -24,12 +24,6 @@ export default function Home() {
       <HomeBanner />
       <div className="uparzon-container-fluid">
         <Features />
-        <CategoryRow />
-        <CategoryRow />
-        <CategoryRow />
-        <CategoryRow />
-        <CategoryRow />
-        <CategoryRow />
         <CategoryRow />
       </div>
     </div>

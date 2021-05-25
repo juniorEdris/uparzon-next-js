@@ -1,4 +1,4 @@
-import Styles from '../../styles/Home.module.css';
+import Styles from '../../../styles/Home.module.css';
 
 const Features = (props) => {
   return (
