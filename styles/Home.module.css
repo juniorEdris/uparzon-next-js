@@ -98,6 +98,7 @@
 .single_category_box{
   background-color: var(--bg-color-one); 
   padding: 0.325rem;
+  box-shadow: var(--box-shadow-one);
 }
 .category_image img{
   min-height: 100%;

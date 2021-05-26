@@ -6,6 +6,7 @@ import Features from '../Components/Home/Features/Features';
 import Categories from '../Components/Home/CategorySidebar/Categories';
 import { useEffect, useState } from 'react';
 import { CategoryRow } from '../Components/Home/CategoryRow/CategoryRow';
+import HomeTabProducts from '../Components/Home/HomeTab/HomeTabProducts';
 
 export default function Home() {
   const [categorySidebar, setCategorySidebar] = useState(false);
@@ -25,6 +26,7 @@ export default function Home() {
       <div className="uparzon-container-fluid">
         <Features />
         <CategoryRow />
+        <HomeTabProducts />
       </div>
     </div>
   );

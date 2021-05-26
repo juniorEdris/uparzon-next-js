@@ -38,7 +38,7 @@ export const CategoryRow = (props) => {
             <Link href={''}>
               <a>
                 <div
-                  className={`${Styles.single_category_box} d-flex  shadow-sm`}
+                  className={`${Styles.single_category_box} d-flex `}
                   key={product.id}>
                   <div className={Styles.category_image}>
                     <img

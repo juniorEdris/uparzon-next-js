@@ -13,8 +13,8 @@ const Categories = (props) => {
           <ul>
             {Array(55)
               .fill()
-              .map((route) => (
-                <li>
+              .map((route, i) => (
+                <li key={i}>
                   <Link href="">
                     <a>cat1</a>
                   </Link>
