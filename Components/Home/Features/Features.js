@@ -4,7 +4,7 @@ const Features = (props) => {
   return (
     <div className={`${Styles.features_wrapper}`}>
       <div className="row ">
-        <div className="col-6 col-lg-3 p-1">
+        <div className="col-6 col-md-3 p-1">
           <div
             className={`${Styles.single_feature} d-flex justify-content-center align-items-center`}>
             <div className={Styles.feature_icon}>
@@ -19,7 +19,7 @@ const Features = (props) => {
             </div>
           </div>
         </div>
-        <div className="col-6 col-lg-3 p-1">
+        <div className="col-6 col-md-3 p-1">
           <div
             className={`${Styles.single_feature} d-flex justify-content-center align-items-center`}>
             <div className={Styles.feature_icon}>
@@ -32,7 +32,7 @@ const Features = (props) => {
           </div>
         </div>
 
-        <div className="col-6 col-lg-3 p-1">
+        <div className="col-6 col-md-3 p-1">
           <div
             className={`${Styles.single_feature} d-flex justify-content-center align-items-center`}>
             <div className={Styles.feature_icon}>
@@ -48,7 +48,7 @@ const Features = (props) => {
           </div>
         </div>
 
-        <div className="col-6 col-lg-3 p-1">
+        <div className="col-6 col-md-3 p-1">
           <div
             className={`${Styles.single_feature} d-flex justify-content-center align-items-center`}>
             <div className={Styles.feature_icon}>

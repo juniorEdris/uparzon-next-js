@@ -7,6 +7,13 @@ import Categories from '../Components/Home/CategorySidebar/Categories';
 import { useEffect, useState } from 'react';
 import { CategoryRow } from '../Components/Home/CategoryRow/CategoryRow';
 import HomeTabProducts from '../Components/Home/HomeTab/HomeTabProducts';
+import HalfMiddleBanner from '../Components/Home/HalfMiddleBanner/HalfMiddleBanner';
+import HeadPhoneProducts from '../Components/Home/HeadPhoneProducts/HeadPhoneProducts';
+import ComputerProducts from '../Components/Home/ComputerProducts/ComputerProducts';
+import PCAccessories from '../Components/Home/PCAccessories/PCAccessories';
+import FullBanner from '../Components/Home/FullBanner/FullBanner';
+import HomeAllProducts from '../Components/Home/HomeAllProducts/HomeAllProducts';
+import ListProductsSection from '../Components/Home/ListProductsSection/ListProductsSection';
 
 export default function Home() {
   const [categorySidebar, setCategorySidebar] = useState(false);
@@ -27,6 +34,13 @@ export default function Home() {
         <Features />
         <CategoryRow />
         <HomeTabProducts />
+        <HalfMiddleBanner />
+        <HeadPhoneProducts/>
+        <ComputerProducts/>
+        <PCAccessories/>
+        <FullBanner/>
+        <HomeAllProducts/>
+        <ListProductsSection/>
       </div>
     </div>
   );
