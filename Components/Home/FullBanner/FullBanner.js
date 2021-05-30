@@ -2,7 +2,7 @@ import HomeWideBanner from '../../../PrimaryComponents/HomeWideBanner/HomeWideBa
 
 const FullBanner = (props) => {
     return (<div className="full_banner section-gap-top">
-        <HomeWideBanner fullWidth/>
+        <HomeWideBanner fullWidth imageone={"assets/images/banners/middle_banners/full-banner-1.png"}/>
     </div> );
 }
  

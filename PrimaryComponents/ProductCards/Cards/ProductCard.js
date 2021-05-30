@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const ProductCard = (props) => {
     return (
         <div className="col-6 col-md-4 col-xl-2 mb-3 col-xxl-1 pr-md-2 pl-md-2">

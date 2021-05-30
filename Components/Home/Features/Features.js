@@ -3,7 +3,7 @@ import Styles from '../../../styles/Home.module.css';
 const Features = (props) => {
   return (
     <div className={`${Styles.features_wrapper}`}>
-      <div className="row ">
+      <div className="row no-gutters">
         <div className="col-6 col-md-3 p-1">
           <div
             className={`${Styles.single_feature} d-flex justify-content-center align-items-center`}>

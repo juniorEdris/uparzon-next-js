@@ -1,6 +1,8 @@
+import { memo } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import Styles from '../../../styles/Home.module.css';
 const HomeBanner = (props) => {
+  console.log('render slider');
   return (
     <div className={Styles.home_banner_wrapper}>
       <OwlCarousel
@@ -19,4 +21,4 @@ const HomeBanner = (props) => {
   );
 };
 
-export default HomeBanner;
+export default memo(HomeBanner);

@@ -1,6 +1,7 @@
 :root {
   /* primary colors */
   --theme-color: #13a7b1;
+  --newsletter-bg-color: #19868D;
   --light-color: #fff;
   --search-btn-color: rgba(0,88,94,100%);
   --dark-color:rgb(91,91,91,100%);
@@ -34,6 +35,14 @@
 search-btn-color: rgba(0,88,94,100%)
 search-select-color: rgba(85,85,85,100%)
 */
+*{
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
 html,
 body {
   padding: 0;
@@ -130,7 +139,9 @@ p {
   font-weight: 400;
   line-height: 24px;
 }
-
+.font-size-1rem{
+  font-size: 1rem !important;
+}
 /*--------------------------------------------------------------------
                         alignment css
 --------------------------------------------------------------------*/
@@ -917,6 +928,7 @@ img {
   padding-bottom: 0.4rem;
   color: var(--theme-color);
 }
+
 /*--------------------------------------------------------------------
                         All Section Headers Ends
 --------------------------------------------------------------------*/
@@ -998,3 +1010,47 @@ img {
     border-bottom: 5px solid var(--theme-color);
   }
   }
+
+  /* 
+  
+              Footer area css here
+  
+  */
+
+
+  .footer-top {
+    padding-bottom: 53px;
+    padding-top: 58px;
+  }
+  .footer_bottom_wrapper{
+    background-color: var(--newsletter-bg-color);
+  }
+.footer_payment img{
+  height: 37px;
+  width: 238px;
+  object-fit: contain;
+}
+.footer_top_logo img{
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+}
+.footer_top_logo p{
+  color: var(--theme-color);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.footer_heading{
+  font-weight: 700;
+}
+.footer_list li{
+  margin-bottom: 0.4rem;
+}
+.footer_list li a{
+  text-transform: capitalize;
+}
+.footer_list li a:hover{
+  color: var(--dark-color) !important;
+  margin-left: 0.5rem;
+}

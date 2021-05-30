@@ -33,8 +33,8 @@ export const CategoryRow = (props) => {
       <div className={`${Styles.category_row_wrapper} d-flex flex-wrap`}>
         {products.map((product) => (
           <div
-            className={`${Styles.single_category_wrapper} col-6 col-md-4 col-lg-3 p-1`}
-            key={product.id}>
+            className={`${Styles.single_category_wrapper} col-6 col-md-4 col-lg-3 p-1`} 
+            key={product.id}>{/* p-0 pr-3 */}
             <Link href={''}>
               <a>
                 <div
