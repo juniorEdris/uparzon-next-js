@@ -1,6 +1,7 @@
 :root {
   /* primary colors */
   --theme-color: #13a7b1;
+  --breadcrumbs-color: #e9ecef;
   --newsletter-bg-color: #19868D;
   --light-color: #fff;
   --search-btn-color: rgba(0,88,94,100%);
@@ -928,6 +929,38 @@ img {
   padding-bottom: 0.4rem;
   color: var(--theme-color);
 }
+/* section header three */
+.section_header_three{
+  text-align: center;
+  
+}
+.section_header_three .title{
+  position:relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  color: #000;
+  color: var(--heading-color);
+  padding: 0 .625rem;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  text-transform: capitalize;
+}
+.section_header_three .title::before,
+.section_header_three .title::after{
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    left: -400%;
+    width: 100vw;
+    height: .063rem;
+    content: "\a0";
+    background-color: var(--theme-color);
+}
+.section_header_three .title:before {
+  margin-left: -54%;
+  text-align: right;
+}
 
 /*--------------------------------------------------------------------
                         All Section Headers Ends
@@ -972,20 +1005,128 @@ img {
 .row_single_banner img{
   height: 100%;
   /* max-height:281px; */
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 /*--------------------------------------------------------------------
-                        Primary Breakpoints
+                        Breadcrumbs css starts here
 --------------------------------------------------------------------*/
-@media (min-width: 1300px) {
-  /* .col-xxl-1{
-    -ms-flex: 0 0 12% !important;
-    flex: 0 0 12% !important;
-    max-width: 12% !important;
-  } */
+.uparzon-breadcrumbs{
+  background: var(--breadcrumbs-color);
+  padding: 1rem 0;
+  color: var(--theme-color);
+}
+.uparzon-breadcrumbs span.active{
+  color: var(--dark-color);
+}
+/*--------------------------------------------------------------------
+                        All Products Components css starts here
+--------------------------------------------------------------------*/
+/* sidebar */
+/* sidebar_list_wrapper
+sidebar_headings
+sidebar_list */
+.sidebar_list_wrapper{
+  border: 1px solid var(--theme-color);
+}
+.sidebar_list_wrapper .sidebar_headings{
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  border-bottom: 1px solid var(--dark-color);
+  color:var(--dark-color);
+}
+.sidebar_list_wrapper .sidebar_list li a{
+  display: block;
+  text-transform: capitalize;
+  color:var(--dark-color);
+  padding: 0.4rem 0;
+  position: relative;
+}
+.sidebar_list_wrapper .sidebar_list li a::after{
+    content: '\f0dd';
+    font-family: 'Font Awesome 5 Free';
+    right: 0;
+    position: absolute;
+    color: var(--dark-color);
+    font-weight: 400;
 }
 
+.sidebar_list_wrapper .sidebar_list li a:hover{
+  color: var(--theme-color);
+}
+/* body */
+.product_view{
+  background: var(--theme-color);
+  padding: 1rem;
+}
+.product_view a {
+  margin-left: 1rem;
+}
+.product_view a img{
+  height: 20px;
+  width: 20px;
+}
+/* .product_view select{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 0.6rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+} */
+/*------------------------------------------------------------------
+              Footer area css here
+-------------------------------------------------------------------*/
+  
+  
+  .footer-top {
+    padding-bottom: 53px;
+    padding-top: 58px;
+  }
+  .footer_bottom_wrapper{
+    background-color: var(--newsletter-bg-color);
+  }
+  .footer_payment img{
+  height: 37px;
+  width: 238px;
+  object-fit: contain;
+  }
+  .footer_top_logo img{
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+  }
+  .footer_top_logo p{
+  color: var(--theme-color);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  }
+  .footer_heading{
+  font-weight: 700;
+  }
+  .footer_list li{
+  margin-bottom: 0.4rem;
+  }
+  .footer_list li a{
+  text-transform: capitalize;
+  }
+  .footer_list li a:hover{
+  color: var(--dark-color) !important;
+  margin-left: 0.5rem;
+  }
+/*--------------------------------------------------------------------
+Primary Breakpoints
+--------------------------------------------------------------------*/
+@media (min-width: 1550px){
+  .col-xxl-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
 @media (min-width:953px) {
   .font-size-point7rem{
     font-size: 1rem !important;
@@ -1014,47 +1155,3 @@ img {
     border-bottom: 5px solid var(--theme-color);
   }
   }
-
-  /* 
-  
-              Footer area css here
-  
-  */
-
-
-  .footer-top {
-    padding-bottom: 53px;
-    padding-top: 58px;
-  }
-  .footer_bottom_wrapper{
-    background-color: var(--newsletter-bg-color);
-  }
-.footer_payment img{
-  height: 37px;
-  width: 238px;
-  object-fit: contain;
-}
-.footer_top_logo img{
-  height: 150px;
-  width: 100%;
-  object-fit: contain;
-}
-.footer_top_logo p{
-  color: var(--theme-color);
-  padding: 1rem 0;
-  text-align: center;
-  font-size: 0.8rem;
-}
-.footer_heading{
-  font-weight: 700;
-}
-.footer_list li{
-  margin-bottom: 0.4rem;
-}
-.footer_list li a{
-  text-transform: capitalize;
-}
-.footer_list li a:hover{
-  color: var(--dark-color) !important;
-  margin-left: 0.5rem;
-}

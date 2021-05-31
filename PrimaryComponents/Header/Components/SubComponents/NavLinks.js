@@ -40,7 +40,7 @@ const NavLinks = (props) => {
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link href="/shop">
                 <a className={`link_capitalize`}>Shop</a>
               </Link>
             </li>

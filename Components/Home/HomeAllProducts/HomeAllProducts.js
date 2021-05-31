@@ -1,12 +1,11 @@
 import ProductCard from '../../../PrimaryComponents/ProductCards/Cards/ProductCard'
+import SectionHeaderThree from '../../../PrimaryComponents/SectionHeaders/SectionHeaderThree'
 import Styles from '../../../styles/Home.module.css'
 
 const HomeAllProducts = (props) => {
     return (
         <div className="section-gap-top">
-            {/* <div className={`${Styles.all_product_header} text-center`}>
-                <span className={`p-0`}>Lorem ipsum dolor sit amet.</span>
-            </div> */}
+            {/* <SectionHeaderThree title={'See All Products'}/> */}
             <div className="d-flex flex-wrap chilldren-gap-top">
             {Array(18).fill().map(e => (
                 <ProductCard/>

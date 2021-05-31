@@ -18,9 +18,8 @@ const Meta = ({ title, description, keywords }) => {
           integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
           crossOrigin="anonymous"
         />
-        <script
-          src="https://kit.fontawesome.com/e0ab26d7f1.js"
-          crossOrigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e0ab26d7f1.js" crossorigin="anonymous"></script>
+        {/* <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/latest/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script> */}
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       </Head>
