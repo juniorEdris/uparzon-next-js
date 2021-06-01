@@ -14,15 +14,18 @@ import HomeAllProducts from '../Components/Home/HomeAllProducts/HomeAllProducts'
 import ListProductsSection from '../Components/Home/ListProductsSection/ListProductsSection';
 import AppBanner from '../Components/Home/AppBanner/AppBanner';
 
-
-export default function Home() {
+export default function Home(props) {
+  const { data } = props.data;
   // prevent owlCarrousel ServerSide rendering
   const HomeBanner = dynamic(import('../Components/Home/Banner/HomeBanner'), {
     ssr: false,
   });
-  const BrandSlider = dynamic(import('../Components/Home/BrandSlider/BrandSlider'), {
-    ssr: false,
-  });
+  const BrandSlider = dynamic(
+    import('../Components/Home/BrandSlider/BrandSlider'),
+    {
+      ssr: false,
+    }
+  );
   return (
     <div className={`${Styles.home_wrapper}`}>
       <Meta />
@@ -30,17 +33,36 @@ export default function Home() {
       <div className="uparzon-container-fluid">
         <Features />
         <CategoryRow />
-        <HomeTabProducts />
+        <HomeTabProducts data={data} />
         <HalfMiddleBanner />
-        <HeadPhoneProducts/>
-        <ComputerProducts/>
-        <PCAccessories/>
-        <FullBanner/>
-        <HomeAllProducts />
+        <HeadPhoneProducts data={data} />
+        <ComputerProducts data={data} />
+        <PCAccessories data={data} />
+        <FullBanner />
+        <HomeAllProducts data={data} />
         <BrandSlider />
-        <ListProductsSection/>
+        <ListProductsSection data={data} />
       </div>
-        <AppBanner/>
+      <AppBanner />
     </div>
   );
 }
+
+// This function gets called at build time on server-side.
+// It won't be called on client-side, so you can even do
+// direct database queries. See the "Technical details" section.
+export const getStaticProps = async () => {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const res = await fetch(
+    'https://demostore.uparzon.com/api/uparzonweb/get_home_products'
+  );
+  const data = await res.json();
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      data,
+    },
+  };
+};

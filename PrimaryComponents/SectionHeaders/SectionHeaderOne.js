@@ -17,7 +17,7 @@ const SectionHeaderOne = (props) => {
         </li>
       </ul>
       <Link href="">
-        <a className="text-capitalize"> all products</a>
+        <a className="text-capitalize all-products-btn"> all products</a>
       </Link>
     </div>
   );

@@ -33,8 +33,9 @@ export const CategoryRow = (props) => {
       <div className={`${Styles.category_row_wrapper} d-flex flex-wrap`}>
         {products.map((product) => (
           <div
-            className={`${Styles.single_category_wrapper} col-6 col-md-4 col-lg-3 p-1`} 
-            key={product.id}>{/* p-0 pr-3 */}
+            className={`${Styles.single_category_wrapper} col-6 col-md-4 col-lg-3 p-1`}
+            key={product.id}>
+            {/* p-0 pr-3 */}
             <Link href={''}>
               <a>
                 <div
@@ -42,7 +43,7 @@ export const CategoryRow = (props) => {
                   key={product.id}>
                   <div className={Styles.category_image}>
                     <img
-                      src={`assets/images/categoryProducts/${product.photo}`}
+                      src={`/assets/images/categoryProducts/${product.photo}`}
                       alt={product.name}
                     />
                   </div>
@@ -50,19 +51,19 @@ export const CategoryRow = (props) => {
                     <div className={Styles.category_name}>
                       <span>{product.name}</span>
                     </div>
-                    {/* <div className={Styles.category_btn}>
-                  <Link href="#">
-                    <a>shop now</a>
-                  </Link>
-                </div> */}
-                    <div className={`${Styles.category_discount} d-flex `}>
+                    <div className={Styles.category_btn}>
+                      <Link href="#">
+                        <a>shop now</a>
+                      </Link>
+                    </div>
+                    {/* <div className={`${Styles.category_discount} d-flex `}>
                       <div
                         className={`${Styles.discount_text} d-flex flex-column`}>
                         <span>Up</span>
                         <span>to</span>
                       </div>
                       <div className={`${Styles.discount_number}`}>7%</div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </a>

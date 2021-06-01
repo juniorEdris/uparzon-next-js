@@ -32,8 +32,8 @@ const HomeTabProducts = (props) => {
     <div className={`${Styles.HomeTabProducts} section-gap-top`}>
       <SectionHeaderOne />
       <div className="col-12 d-flex flex-wrap p-0 chilldren-gap-top">
-        {Array(12).fill().map(e => (
-          <ProductCard />
+        {props.data?.map((product) => (
+          <ProductCard product={product} key={product.id} />
         ))}
       </div>
     </div>

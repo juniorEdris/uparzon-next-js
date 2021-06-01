@@ -2,7 +2,7 @@ import { memo } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import Styles from '../../../styles/Home.module.css';
 const HomeBanner = (props) => {
-  console.log('render slider');
+  // console.log('render slider');
   return (
     <div className={Styles.home_banner_wrapper}>
       <OwlCarousel
@@ -14,7 +14,7 @@ const HomeBanner = (props) => {
         items={1}
         dots={true}>
         <div className={Styles.single_banner_image}>
-          <img src="assets/images/banners/01.png" alt="home banner" />
+          <img src="/assets/images/banners/01.png" alt="home banner" />
         </div>
       </OwlCarousel>
     </div>

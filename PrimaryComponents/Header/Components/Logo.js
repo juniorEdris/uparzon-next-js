@@ -1,12 +1,11 @@
 import Styles from '../../../styles/Header.module.css';
-import Image from 'next/image';
 import Link from 'next/link';
 const Logo = () => {
   return (
     <div className={`${Styles.header_logo} col-md-2 col-4`}>
       <Link href="/" className="">
         <a className="">
-          <Image
+          <img
             src="/assets/svg/logo/logo.svg"
             alt="Picture of the author"
             width={150}

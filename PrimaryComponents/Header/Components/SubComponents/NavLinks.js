@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Styles from '../../../../styles/Header.module.css';
 const NavLinks = (props) => {
   const categoriesSidebar = (e) => {
@@ -7,7 +8,7 @@ const NavLinks = (props) => {
   };
   return (
     <div className={`${Styles.nav_links_wrapper} col-12`}>
-      <div className="row align-items-center">
+      <div className="row align-items-center no-gutters">
         <div
           className={`${Styles.all_categories} col-4 col-md-2 font-weight-600`}>
           <a href="#" className={`link_capitalize`} onClick={categoriesSidebar}>
@@ -53,7 +54,7 @@ const NavLinks = (props) => {
         </div>
         <div className={` col-md-4 col-8 font-weight-600`}>
           <div className="row justify-content-end no-gutters">
-            <div className={Styles.navlink_right}>
+            <div className={`${Styles.navlink_right}`}>
               <img
                 src="/assets/svg/icons/blender-phone.svg"
                 alt="blender-phone"
@@ -61,7 +62,7 @@ const NavLinks = (props) => {
               />
               <span>Hotline : 1-001-234-5678</span>
             </div>
-            <div className={`${Styles.navlink_right} ml-2`}>
+            <div className={`${Styles.navlink_right} ml-3`}>
               <span>Free Shipping on Order ৳2000+</span>
             </div>
           </div>

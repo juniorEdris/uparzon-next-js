@@ -53,15 +53,15 @@
 }
 .cross{
   position: absolute;
-  right: 12px;
+  right: 10px;
   z-index: 1000;
   background: var(--theme-color);
-  top: 11px;
+  top: 0px;
   width: 30px;
   height: 30px;
-  line-height: 25px;
+  line-height: 30px;
   text-align: center;
-  border-radius: 3rem;
+  /* border-radius: 3rem; */
   font-size: 1.2rem;
   cursor: pointer;
   color: #fff;
@@ -96,6 +96,7 @@
   text-decoration: none;
 }
 .single_category_box{
+  min-height: 138px;
   background-color: var(--bg-color-one); 
   padding: 0.325rem;
   box-shadow: var(--box-shadow-one);
@@ -121,7 +122,8 @@
   color: var(--theme-color);
 }
 .category_btn {
-  padding-top: 1.4rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 .category_btn a{
   text-transform: capitalize;
@@ -211,7 +213,12 @@
     object-fit: contain;
 }
 
-
+/* List view section css here */
+.list_view_section_banner img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 /* 
   Footer Section Css starts here
 */
@@ -261,6 +268,9 @@
   }
 }
 @media (min-width:1150px) {
+  .categories{
+    width: 20%;
+  }
   .category_name span {
     font-size: 1.2rem;
   }
@@ -273,7 +283,8 @@
 }
 @media (min-width:767px) {
   .categories{
-    width: 30%;}
+    width: 30%;
+  }
     .features_wrapper .single_feature {
       padding: 1rem;
     }
