@@ -3,7 +3,7 @@ import Styles from '../styles/Home.module.css';
 import dynamic from 'next/dynamic';
 import Features from '../Components/Home/Features/Features';
 import { useEffect, useState } from 'react';
-import { CategoryRow } from '../Components/Home/CategoryRow/CategoryRow';
+import CategoryRow from '../Components/Home/CategoryRow/CategoryRow';
 import HomeTabProducts from '../Components/Home/HomeTab/HomeTabProducts';
 import HalfMiddleBanner from '../Components/Home/HalfMiddleBanner/HalfMiddleBanner';
 import HeadPhoneProducts from '../Components/Home/HeadPhoneProducts/HeadPhoneProducts';
@@ -55,7 +55,7 @@ export const getStaticProps = async () => {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
   const res = await fetch(
-    'https://demostore.uparzon.com/api/uparzonweb/get_home_products'
+    'https://store.uparzon.com/api/uparzonweb/get_home_products'
   );
   const data = await res.json();
   // By returning { props: { posts } }, the Blog component

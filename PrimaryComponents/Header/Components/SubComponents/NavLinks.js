@@ -10,7 +10,7 @@ const NavLinks = (props) => {
     <div className={`${Styles.nav_links_wrapper} col-12`}>
       <div className="row align-items-center no-gutters">
         <div
-          className={`${Styles.all_categories} col-4 col-md-2 font-weight-600`}>
+          className={`${Styles.all_categories} col-4 col-md-2 font-weight-600 d-flex`}>
           <a href="#" className={`link_capitalize`} onClick={categoriesSidebar}>
             all categories <span className="lnr lnr-menu font-weight-600" />
           </a>
@@ -55,10 +55,12 @@ const NavLinks = (props) => {
         <div className={` col-md-4 col-8 font-weight-600`}>
           <div className="row justify-content-end no-gutters">
             <div className={`${Styles.navlink_right}`}>
-              <img
+              <Image
                 src="/assets/svg/icons/blender-phone.svg"
                 alt="blender-phone"
-                className={Styles.navlink_icon}
+                className={``}
+                height={'20px'}
+                width={'20px'}
               />
               <span>Hotline : 1-001-234-5678</span>
             </div>

@@ -1,11 +1,16 @@
+import Image from 'next/image';
 export default function FooterLeft() {
   return (
     <div className="col-md-6">
       <div className="row no-gutters">
         <div className="col-6 footer_top_logo">
-          <img
+          <Image
             src="/assets/images/logo/Web-Uparzon-Logo.png"
             alt="uparzon logo"
+            height={'100%'}
+            width={'100%'}
+            // layout="fill"
+            priority
           />
           <p>
             An active platform that makes you adaptable with all the warmest
@@ -24,22 +29,46 @@ export default function FooterLeft() {
             <ul className="media-icons d-flex justify-content-center align-items-center">
               <li>
                 <a href="https://www.facebook.com">
-                  <img src="/assets/images/socialIcons/fb.png" alt="" />
+                  <Image
+                    src="/assets/images/socialIcons/fb.png"
+                    alt=""
+                    height={'100%'}
+                    width={'100%'}
+                    priority
+                  />
                 </a>
               </li>
               <li>
                 <a href="https://www.twetter.com">
-                  <img src="/assets/images/socialIcons/tweetter.png" alt="" />
+                  <Image
+                    src="/assets/images/socialIcons/tweetter.png"
+                    alt=""
+                    height={'100%'}
+                    width={'100%'}
+                    priority
+                  />
                 </a>
               </li>
               <li>
                 <a href="https://www.youtube.com">
-                  <img src="/assets/images/socialIcons/youtube.png" alt="" />
+                  <Image
+                    src="/assets/images/socialIcons/youtube.png"
+                    alt=""
+                    height={'100%'}
+                    width={'100%'}
+                    priority
+                  />
                 </a>
               </li>
               <li>
                 <a href="https://www.linked.in">
-                  <img src="/assets/images/socialIcons/linked.png" alt="" />
+                  <Image
+                    src="/assets/images/socialIcons/linked.png"
+                    alt=""
+                    height={'100%'}
+                    width={'100%'}
+                    priority
+                  />
                 </a>
               </li>
             </ul>

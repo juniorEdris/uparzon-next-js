@@ -1,5 +1,6 @@
 import Styles from '../../../styles/Header.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 import UserDropdown from './SubComponents/UserDropdown';
 import { useState } from 'react';
 import BasketDropdown from './SubComponents/BasketDropdown';
@@ -20,28 +21,48 @@ const HeaderButtons = () => {
       <div className={`${Styles.header_icon} ${Styles.header_compare}`}>
         <Link href="/compare">
           <a>
-            <img src="/assets/svg/icons/compare.svg" alt="compare_icon" />
+            <Image
+              src="/assets/svg/icons/compare.svg"
+              alt="compare_icon"
+              height={'100%'}
+              width={'100%'}
+            />
           </a>
         </Link>
       </div>
       <div className={`${Styles.header_icon} ${Styles.header_wishlist}`}>
         <Link href="/whishlist">
           <a>
-            <img src="/assets/svg/icons/wishlist.svg" alt="wishlist_icon" />
+            <Image
+              src="/assets/svg/icons/wishlist.svg"
+              alt="wishlist_icon"
+              height={'100%'}
+              width={'100%'}
+            />
             <span className={Styles.count}>{'0'}</span>
           </a>
         </Link>
       </div>
       <div className={`${Styles.header_icon} ${Styles.header_cart}`}>
         <a href={'#'} onClick={basketList}>
-          <img src="/assets/svg/icons/shopping-cart.svg" alt="cart_icon" />
+          <Image
+            src="/assets/svg/icons/shopping-cart.svg"
+            alt="cart_icon"
+            height={'100%'}
+            width={'100%'}
+          />
           <span className={Styles.count}>{'0'}</span>
         </a>
         {basketDropdown && <BasketDropdown />}
       </div>
       <div className={`${Styles.header_icon} ${Styles.header_user} `}>
         <a href="#" onClick={openUserCart}>
-          <img src="/assets/svg/icons/user.svg" alt="user_icon" />
+          <Image
+            src="/assets/svg/icons/user.svg"
+            alt="user_icon"
+            height={'100%'}
+            width={'100%'}
+          />
         </a>
         {userCart && <UserDropdown />}
       </div>

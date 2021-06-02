@@ -1,6 +1,7 @@
 import Styles from '../../../styles/Home.module.css';
 import SectionHeaderTwo from '../../SectionHeaders/SectionHeaderTwo';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Truncate } from '../../Utility';
 const ListCard = (props) => {
   return (
@@ -16,12 +17,12 @@ const ListCard = (props) => {
               <div className={`${Styles.home_product_list_wrapper} col mb-3`}>
                 <div className="d-flex">
                   <div className={`${Styles.list_product_image}`}>
-                    <img
-                      src={`https:${product?.photo?.replace(
-                        'demostore',
-                        'store'
-                      )}`}
+                    <Image
+                      src={`https:${product?.photo}`}
                       alt="image"
+                      height={75}
+                      width={75}
+                      priority
                     />
                   </div>
                   <div className="list_product_body">
@@ -35,7 +36,13 @@ const ListCard = (props) => {
                       {Array(5)
                         .fill()
                         .map((e) => (
-                          <img src="/assets/svg/icons/Icon-star.svg" alt="" />
+                          <Image
+                            src="/assets/svg/icons/Icon-star.svg"
+                            alt=""
+                            height={15}
+                            width={15}
+                            priority
+                          />
                         ))}
                     </div>
                     <div className={`${Styles.list_product_price} d-flex`}>

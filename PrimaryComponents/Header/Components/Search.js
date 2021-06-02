@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import Styles from '../../../styles/Header.module.css';
 const Search = () => {
@@ -25,7 +26,10 @@ const Search = () => {
             />
           </div>
           <div className="col-4 p-0">
-            <select name="categories" id="" className="">
+            <select
+              name="categories"
+              id=""
+              className={Styles.header_search_input_select}>
               <option value="">all categories</option>
               <option value="">electronics</option>
               <option value="">clothings</option>
@@ -34,10 +38,13 @@ const Search = () => {
           <div className="col-1 p-0">
             <Link href="/search" className="">
               <a className="flex-hard-center">
-                <img
+                {/* <img */}
+                <Image
                   className={`${Styles.header_search_icon} `}
                   src="/assets/svg/icons/search.svg"
                   alt="search button"
+                  height={'20px'}
+                  width={'20px'}
                 />
               </a>
             </Link>

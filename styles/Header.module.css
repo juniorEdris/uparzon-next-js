@@ -40,7 +40,7 @@
     WRITTEN IN JSX STYLE
     */
 } 
-.header_search_input_wrapper select{
+.header_search_input_select{
     width: 100%;
     height: 40px;
     max-height: 100%;
@@ -72,7 +72,9 @@
     justify-content: space-around;
 }
 .header_icon{
-    margin-left: 0.6rem;
+    height: 25px;
+    width: 25px;
+    margin-left: 1.2rem;
 }
 .header_icon a img{
     height: 1.2rem;
@@ -100,6 +102,11 @@
     background-color: var(--light-color);
     border: 1px solid #ddd;
     padding: 0.7rem;
+}
+.responsive_search a{
+    width: 25px;
+    height: 25px;
+
 }
 .responsive_search_icon{
     width: 25px;
@@ -133,6 +140,7 @@
 .middle_links ul{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 0;
 }
 .middle_links ul li:not(:last-child){
@@ -145,6 +153,16 @@
 }
 .navlink_right{
     font-size: 0.4rem;
+    /* height: 20px; */
+    display: flex;
+    align-items: center;
+}
+.navlink_right span{
+    margin-left: 0.25rem;
+}
+.navlink_right{
+    display: flex;
+    align-items: center; 
 }
 .navlink_icon{
     height: 10px;
@@ -189,16 +207,17 @@
     /* header buttons css starts here */
     .header_buttons{
         justify-content: center;
+        padding-top: 0.5rem;
     }
     /* .header_buttons div:not(:last-child){
         margin-right: 2rem;
     } */
     .count{
         height: 20px;
-        left: 17px;
-        line-height: 20px;
-        top: -10px;
-        width: 20px;
+    left: 17px;
+    line-height: 20px;
+    top: -13px;
+    width: 20px;
     }
     .nav_links_wrapper{
         /* font-size: 0.7rem; */

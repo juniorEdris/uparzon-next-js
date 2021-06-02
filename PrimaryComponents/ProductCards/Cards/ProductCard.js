@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Truncate } from '../../Utility';
 
 const ProductCard = (props) => {
@@ -10,14 +11,14 @@ const ProductCard = (props) => {
             <div className="product_image">
               <Link href="/productdetails/2">
                 <a>
-                  <img
-                    src={`https:${props.product?.photo?.replace(
-                      'demostore',
-                      'store'
-                    )}`}
+                  <Image
+                    src={`https:${props.product?.photo}`}
                     alt="1st image"
+                    height={'187px'}
+                    width={'187px'}
+                    objectFit="contain"
+                    priority
                   />
-                  {/* <img src="/assets/images/products/01.png" alt="1st image" /> */}
                 </a>
               </Link>
             </div>
@@ -37,7 +38,13 @@ const ProductCard = (props) => {
                 {Array(5)
                   .fill()
                   .map((e) => (
-                    <img src="/assets/svg/icons/Icon-star.svg" alt="" />
+                    <Image
+                      src="/assets/svg/icons/Icon-star.svg"
+                      alt=""
+                      height={15}
+                      width={15}
+                      priority
+                    />
                   ))}
               </div>
               <div className="product_price">
@@ -46,9 +53,12 @@ const ProductCard = (props) => {
             </div>
             <div className="addTocart_btn">
               <a href="">
-                <img
+                <Image
                   src="/assets/svg/icons/cart-arrow-down.svg"
                   alt="cart icons"
+                  height={30}
+                  width={30}
+                  priority
                 />
               </a>
             </div>

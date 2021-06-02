@@ -1228,10 +1228,10 @@ img {
 .product_card_footer {
     padding: 0.85rem;
 }
-.product_image img{
+.product_image {
     height: 180px;
     width: 100%;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 .product_name {
     height: 48px;

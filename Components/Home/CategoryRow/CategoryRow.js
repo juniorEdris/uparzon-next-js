@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Styles from '../../../styles/Home.module.css';
 
-export const CategoryRow = (props) => {
+const CategoryRow = (props) => {
   const products = [
     {
       id: 1,
@@ -42,9 +43,12 @@ export const CategoryRow = (props) => {
                   className={`${Styles.single_category_box} d-flex `}
                   key={product.id}>
                   <div className={Styles.category_image}>
-                    <img
+                    <Image
                       src={`/assets/images/categoryProducts/${product.photo}`}
                       alt={product.name}
+                      height={191}
+                      width={191}
+                      priority
                     />
                   </div>
                   <div className={Styles.category_details}>

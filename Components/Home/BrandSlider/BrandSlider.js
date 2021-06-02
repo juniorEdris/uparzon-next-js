@@ -1,31 +1,32 @@
 import OwlCarousel from 'react-owl-carousel';
+import Image from 'next/image';
 import Styles from '../../../styles/Home.module.css';
 
 const BrandSlider = (props) => {
   const brands = [
     {
       id: 1,
-      photo: 'assets/images/brands/01.png',
+      photo: '/assets/images/brands/01.png',
     },
     {
       id: 2,
-      photo: 'assets/images/brands/02.png',
+      photo: '/assets/images/brands/02.png',
     },
     {
       id: 3,
-      photo: 'assets/images/brands/03.png',
+      photo: '/assets/images/brands/03.png',
     },
     {
       id: 4,
-      photo: 'assets/images/brands/04.png',
+      photo: '/assets/images/brands/04.png',
     },
     {
       id: 6,
-      photo: 'assets/images/brands/06.png',
+      photo: '/assets/images/brands/06.png',
     },
     {
       id: 7,
-      photo: 'assets/images/brands/06.png',
+      photo: '/assets/images/brands/06.png',
     },
   ];
   return (
@@ -41,7 +42,14 @@ const BrandSlider = (props) => {
         dots={false}>
         {brands.map((brand) => (
           <div className={Styles.single_brand} key={brand.id}>
-            <img src={brand.photo} alt="brand image" />
+            {/* <img src={brand.photo} alt="brand image" /> */}
+            <Image
+              src={brand.photo}
+              alt="brand image"
+              height="100%"
+              width={'100%'}
+              priority
+            />
           </div>
         ))}
       </OwlCarousel>

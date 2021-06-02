@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ShopProductCards = (props) => {
   return (
@@ -8,7 +9,14 @@ const ShopProductCards = (props) => {
           <div className="product_image">
             <Link href="/productdetails/2">
               <a>
-                <img src="/assets/images/products/01.png" alt="1st image" />
+                <Image
+                  src="/assets/images/products/01.png"
+                  alt="1st image"
+                  height={'187px'}
+                  width={'187px'}
+                  objectFit="contain"
+                  priority
+                />
               </a>
             </Link>
           </div>
@@ -27,7 +35,12 @@ const ShopProductCards = (props) => {
               {Array(5)
                 .fill()
                 .map((e) => (
-                  <img src="/assets/svg/icons/Icon-star.svg" alt="" />
+                  <Image
+                    src="/assets/svg/icons/Icon-star.svg"
+                    alt=""
+                    height={15}
+                    width={15}
+                  />
                 ))}
             </div>
             <div className="product_price">
@@ -36,9 +49,11 @@ const ShopProductCards = (props) => {
           </div>
           <div className="addTocart_btn">
             <a href="">
-              <img
+              <Image
                 src="/assets/svg/icons/cart-arrow-down.svg"
                 alt="cart icons"
+                height={30}
+                width={30}
               />
             </a>
           </div>

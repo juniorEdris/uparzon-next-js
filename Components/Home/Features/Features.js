@@ -1,4 +1,5 @@
 import Styles from '../../../styles/Home.module.css';
+import Image from 'next/image';
 
 const Features = (props) => {
   return (
@@ -8,12 +9,15 @@ const Features = (props) => {
           <div
             className={`${Styles.single_feature} d-flex justify-content-center align-items-center`}>
             <div className={Styles.feature_icon}>
-              <img
+              <Image
+                priority
                 src="/assets/svg/icons/shipping-fast.svg"
                 alt="fast shipping"
+                height={50}
+                width={50}
               />
             </div>
-            <div className={Styles.feature_text}>
+            <div className={`${Styles.feature_text} ml-2`}>
               <h3>Free Shipping</h3>
               <span>free shipping on all us order</span>
             </div>
@@ -23,9 +27,15 @@ const Features = (props) => {
           <div
             className={`${Styles.single_feature} d-flex justify-content-center align-items-center`}>
             <div className={Styles.feature_icon}>
-              <img src="/assets/svg/icons/phone-call.svg" alt="fast shipping" />
+              <Image
+                priority
+                src="/assets/svg/icons/phone-call.svg"
+                alt="fast shipping"
+                height={50}
+                width={50}
+              />
             </div>
-            <div className={Styles.feature_text}>
+            <div className={`${Styles.feature_text} ml-2`}>
               <h3>Free Shipping</h3>
               <span>free shipping on all us order</span>
             </div>
@@ -36,12 +46,15 @@ const Features = (props) => {
           <div
             className={`${Styles.single_feature} d-flex justify-content-center align-items-center`}>
             <div className={Styles.feature_icon}>
-              <img
+              <Image
+                priority
                 src="/assets/svg/icons/hourglass-full.svg"
                 alt="fast shipping"
+                height={50}
+                width={50}
               />
             </div>
-            <div className={Styles.feature_text}>
+            <div className={`${Styles.feature_text} ml-2`}>
               <h3>Free Shipping</h3>
               <span>free shipping on all us order</span>
             </div>
@@ -52,12 +65,15 @@ const Features = (props) => {
           <div
             className={`${Styles.single_feature} d-flex justify-content-center align-items-center`}>
             <div className={Styles.feature_icon}>
-              <img
+              <Image
+                priority
                 src="/assets/svg/icons/simple-f-secure.svg"
                 alt="fast shipping"
+                height={50}
+                width={50}
               />
             </div>
-            <div className={Styles.feature_text}>
+            <div className={`${Styles.feature_text} ml-2`}>
               <h3>Free Shipping</h3>
               <span>free shipping on all us order</span>
             </div>
