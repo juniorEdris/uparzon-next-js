@@ -7,8 +7,8 @@ export default function FooterLeft() {
           <Image
             src="/assets/images/logo/Web-Uparzon-Logo.png"
             alt="uparzon logo"
-            height={'100%'}
-            width={'100%'}
+            height={'1000'}
+            width={'800'}
             // layout="fill"
             priority
           />

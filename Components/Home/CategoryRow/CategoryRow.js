@@ -7,25 +7,25 @@ const CategoryRow = (props) => {
     {
       id: 1,
       name: 'Computer and Desktop Accessories',
-      photo: 'image1.png',
+      photo: 'pc.png',
       discount: 7,
     },
     {
       id: 2,
       name: 'Computer and Desktop Accessories',
-      photo: 'image2.png',
+      photo: 'watch.png',
       discount: 7,
     },
     {
       id: 3,
       name: 'Computer and Desktop Accessories',
-      photo: 'image3.png',
+      photo: 'game.png',
       discount: 7,
     },
     {
       id: 4,
       name: 'Computer and Desktop Accessories',
-      photo: 'image4.png',
+      photo: 'mobile.png',
       discount: 7,
     },
   ];
@@ -44,7 +44,7 @@ const CategoryRow = (props) => {
                   key={product.id}>
                   <div className={Styles.category_image}>
                     <Image
-                      src={`/assets/images/categoryProducts/${product.photo}`}
+                      src={`/assets/images/categoryproducts/${product.photo}`}
                       alt={product.name}
                       height={191}
                       width={191}

@@ -9,7 +9,7 @@ module.exports = withPlugins([
       // but you can overwrite them here with any valid value you want.
       inlineImageLimit: 8192,
       imagesFolder: 'images',
-      imagesName: '[name]-[hash].[ext]',
+      imagesName: '[name].[ext]',
       handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
       removeOriginalExtension: false,
       optimizeImages: true,

@@ -29,15 +29,15 @@ const Search = () => {
             <select
               name="categories"
               id=""
-              className={Styles.header_search_input_select}>
+              className={`header_search_input_select`}>
               <option value="">all categories</option>
               <option value="">electronics</option>
               <option value="">clothings</option>
             </select>
           </div>
-          <div className="col-1 p-0">
-            <Link href="/search" className="">
-              <a className="flex-hard-center">
+          <div className="col-1 p-0 ">
+            <Link href="/search" className=" ">
+              <a className="search_icon flex-hard-center">
                 {/* <img */}
                 <Image
                   className={`${Styles.header_search_icon} `}
@@ -65,6 +65,29 @@ const Search = () => {
           position: absolute;
           top: 50vh;
           color: #000;
+        }
+
+        .header_search_input_select {
+          width: 100%;
+          height: 40px;
+          max-height: 100%;
+          padding: 0px 0px 0px 9px;
+          border: none;
+          text-transform: capitalize;
+          background: #fff;
+          text-align-last: right;
+          padding-right: 10px;
+        }
+        .search_icon{
+          width: 100%;
+          height: 40px;
+          max-height: 100%;
+          padding: 0.5rem 0;
+          border-radius: 0 5rem 5rem 0;
+          border: none;
+          outline: none;
+          background: var(--search-btn-color);
+        }
         }
       `}</style>
     </div>

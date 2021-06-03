@@ -40,7 +40,7 @@
     WRITTEN IN JSX STYLE
     */
 } 
-.header_search_input_select{
+/* .header_search_input_select{
     width: 100%;
     height: 40px;
     max-height: 100%;
@@ -60,7 +60,7 @@
     border: none;
     outline: none;
     background: var(--search-btn-color);
-}
+} */
 .header_search_icon{
     width: 20px;
 }

@@ -15,7 +15,7 @@ const HeadPhoneProducts = (props) => {
     <div className={`${Styles.head_phone_wrapper} col-12 section-gap-top`}>
       <ProductRow
         title={'Headphones'}
-        imgPath={'/assets/images/ProductSections/headings/Phone_row_banner.png'}
+        imgPath={'/assets/images/ProductSections/headings/phone_row_banner.png'}
         data={props.data}
       />
     </div>
