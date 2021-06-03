@@ -1393,6 +1393,9 @@ sidebar_list */
     background-color: var(--newsletter-bg-color);
 }
 
+.footer_payment div {
+    float: right;
+}
 .footer_payment img {
     height: 37px;
     width: 238px;

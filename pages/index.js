@@ -48,21 +48,40 @@ export default function Home(props) {
   );
 }
 
-// This function gets called at build time on server-side.
-// It won't be called on client-side, so you can even do
-// direct database queries. See the "Technical details" section.
-export const getStaticProps = async () => {
-  // Call an external API endpoint to get posts.
-  // You can use any data fetching library
+// // This function gets called at build time on server-side.
+// // It won't be called on client-side, so you can even do
+// // direct database queries. See the "Technical details" section.
+// export const getStaticProps = async () => {
+//   // Call an external API endpoint to get posts.
+//   // You can use any data fetching library
+//   const res = await fetch(
+//     'https://store.uparzon.com/api/uparzonweb/get_home_products'
+//   );
+//   const data = await res.json();
+//   // By returning { props: { posts } }, the Blog component
+//   // will receive `posts` as a prop at build time
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// };
+
+export async function getServerSideProps(context) {
   const res = await fetch(
-    'https://store.uparzon.com/api/uparzonweb/get_home_products'
+    `https://store.uparzon.com/api/uparzonweb/get_home_products`
   );
   const data = await res.json();
-  // By returning { props: { posts } }, the Blog component
-  // will receive `posts` as a prop at build time
+
+  // if (!data) {
+  //   return {
+  //     notFound: true,
+  //   };
+  // }
+
   return {
     props: {
       data,
-    },
+    }, // will be passed to the page component as props
   };
-};
+}
